@@ -1,3 +1,11 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   margin: 0;
   font-family: 'Segoe UI', 'Arial Rounded MT Bold', Arial, sans-serif;
@@ -5,8 +13,7 @@ body {
   color: #222;
 }
 .container {
-  min-height: 60vh;
-  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -67,10 +74,11 @@ body {
 }
 .footer {
   text-align: center;
-  margin-top: 2rem;
   padding: 1rem 0;
   font-size: 0.95rem;
   color: #555;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
 }
 
 .footer-link {
